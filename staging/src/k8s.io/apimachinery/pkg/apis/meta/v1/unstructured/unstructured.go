@@ -38,6 +38,7 @@ import (
 // TODO: make the serialization part of this type distinct from the field accessors.
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:deepcopy-gen=true
+// +kubebuilder:pruning:PreserveUnknownFields
 type Unstructured struct {
 	// Object is a JSON compatible map with string, float, int, bool, []interface{}, or
 	// map[string]interface{}
